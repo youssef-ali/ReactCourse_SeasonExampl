@@ -31,7 +31,8 @@ componentDidMount(){
 
         if(this.state.lat && !this.state.errorMessage)
         {
-            return <div>Latitude: {this.state.lat}</div>;
+            return <SeasonDisplay lat={this.state.lat}/>;
+            //<div>Latitude: {this.state.lat}</div>
         } 
         
         return <div>Loading...</div>;
